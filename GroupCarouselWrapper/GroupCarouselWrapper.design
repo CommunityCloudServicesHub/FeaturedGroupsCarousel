@@ -1,0 +1,6 @@
+<design:component label="Group Carousel/Slider">
+	<design:attribute name="slidesPerPage" label="Slides Per Page" default="3" description="Slides Per Page" />
+	<design:attribute name="autoPlay"  label="Auto Play" description="If Set to true, auto plays the carousel" />
+	<design:attribute name="autoPlayInterval"  label="Auto Play Interval(ms)" description="Auto Play interval" />
+   	<design:attribute name="aspectRatio"  label="Slide Aspect Ratio" description="Slide's aspect Ratio (1:1, 4:3, 21:9 etc)" />
+</design:component>

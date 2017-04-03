@@ -1,0 +1,15 @@
+<aura:component extends="cloudx_cms:SS_uiBaseCarouselSlide">
+    <div class="slds-size--1-of-1 slds-p-around--small">
+        <figure class="slds-image slds-image--card">
+            <a href="javascript:void(0);" class="slds-image__crop slds-image__crop--16-by-9">
+                <div class="slds-image--overlay"></div>
+                <img src="{!v.item.FullPhotoUrl}" alt="Description of the image" />
+            </a>
+            <figcaption class="slds-image__title slds-image__title--overlay slds-align--absolute-center slds-text-heading--large">
+                <span class="slds-image__text slds-truncate" title="{!v.record.Name}">{!v.item.Name}
+                    <span class="slds-assistive-text">{!v.item.Name}</span>
+                </span>
+            </figcaption>
+        </figure>
+    </div>
+</aura:component>

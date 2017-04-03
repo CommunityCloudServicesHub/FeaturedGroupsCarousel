@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="slidesPerPage" type="Integer" default="3" description="Slides Per Page" />
+    <aura:attribute name="autoPlay" type="Boolean" default="false" />
+    <aura:attribute name="autoPlayInterval" type="Integer" default="2000" description="Auto Play Duration" />
+    <aura:attribute name="aspectRatio" type="String" description="Slide Aspect Ratio (e.g. 1:1, 12:9)" default="1:1"/>
+    <cloudx_cms:SS_uiCarousel slidesPerPage="{!v.slidesPerPage}" autoPlay="{!v.autoPlay}" autoPlayInterval="{!v.autoPlayInterval}">
+        <aura:set attribute="slideTemplate">
+            <c:GroupCard item="{!item}" />
+        </aura:set>
+        <aura:set attribute="dataProvider">
+            <c:GroupDataProvider />
+        </aura:set>
+    </cloudx_cms:SS_uiCarousel>
+</aura:component>
